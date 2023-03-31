@@ -1,0 +1,33 @@
+'''
+Obter o salário do funcionário
+Encontrar alíquota
+Calcular o imposto de renda
+
+- salário < 1257,12 - isento
+- salário >= 1257,12 and salário <= 2510,00 - 17%
+-salário > 2510,00 - 28%
+'''
+
+print('Imposto de renda')
+
+#entrada de dados
+salario = float(input('Digite seu salário: '))
+
+#processamento de dados
+if salario < 1257.12:
+    aliquota = 0
+elif salario >= 1257.12 and salario < 2510.00:
+    aliquota = 0.17
+else:
+    aliquota = 0.28
+
+
+match aliquota:
+    case 0:
+        print('Você está isento de imposto de renda')
+        print(f'Salário: {salario:2f}')
+    case _:
+        print(f'Salário: {salario:.2f}')
+        print(f'Salário Líquido: {salario - (salario*aliquota)}')
+        print('Alíquota:  {(aliquota*100):1f}', '%')
+        print(f'Valor á pagar: {(salario*aliquota):.2f}')

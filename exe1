@@ -1,0 +1,23 @@
+'''
+Criar um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês.
+Sabendo que este vendedor ganha 15% de comissão sobre as vendas efetuadas, calcular e imprimir o total a receber no final do mês
+'''
+
+# 1- Obter o nome do vendedor (str)
+# 2- Obter o salário fixo (float)
+# 3- Obter o total das vendas (float)
+# 4- Calcular a comissão e total de vendas
+# 5- Imprimir o total á receber
+
+print('Cálculo da Comissão de Vendedor')
+
+#entrada de dados
+nome = input('Digite aqui seu nome: ')
+salario = float(input('Digite aqui seu salário fixo:'))
+vendas = float(input('Digte aqui o total de vendas: '))
+
+#processamento
+a_receber = salario + (vendas * 0.15)
+
+#saída de dados
+print(f'Salário mensal: {a_receber:.2f}')

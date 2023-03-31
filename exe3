@@ -1,0 +1,22 @@
+'''
+Escreva um programa em leia a idade de um nadador e apresente a sua categaoria de acordo com a tabela(vide tabela)
+'''
+# 1- Obter a idade do nadador
+# 2- Verificar e imprimir a categoria
+
+print('Verificando a categoria')
+idade = int(input('Idade: '))
+
+if idade >= 5 and idade <= 7:
+    print('Sua categoria é a Infantil A')
+elif idade >= 8 and idade <=10:
+    print('Sua categoria é a Infantil B')
+elif idade >= 11 and idade <=13:
+    print('Sua categoria é a Juvenil A')
+elif idade >= 14 and idade <= 17:
+    print('Sua categoria é a Juvenil B')
+elif idade >= 18:
+    print('Senior')
+else:
+    print('Não permitido!')
+    
